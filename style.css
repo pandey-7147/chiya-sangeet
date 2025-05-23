@@ -37,7 +37,7 @@ header h1 {
 header p {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.25rem;
-    color: #333;
+    color: #4e1818;
     margin-top: 0;
     font-style: italic;
     letter-spacing: 1px;
@@ -212,7 +212,7 @@ nav a:hover {
 .devanagari {
     font-family: 'fangsong', serif;
     font-size: 3rem;
-    color: #20191c;
+    color: #720c0c;
     letter-spacing: 2px;
     text-shadow: 0 2px 8px rgba(215,38,96,0.08);
 } 
