@@ -1,6 +1,6 @@
 // Placeholder for switching between viewer and admin mode
 // In real implementation, use authentication and JS to toggle admin controls
-const isAdmin = false; // Change to true to simulate admin mode
+let isAdmin = false;
 
 // Collapsible menu logic
 window.addEventListener('DOMContentLoaded', function() {
@@ -22,8 +22,19 @@ window.addEventListener('DOMContentLoaded', function() {
         coll[0].classList.add('active');
         contents[0].classList.add('active');
     }
+
     // Admin controls logic
-    document.querySelectorAll('.admin-controls').forEach(ctrl => {
-        ctrl.style.display = isAdmin ? 'block' : 'none';
+    function updateAdminMode() {
+        document.querySelectorAll('.admin-controls').forEach(ctrl => {
+            ctrl.style.display = isAdmin ? 'block' : 'none';
+        });
+        document.getElementById('admin-banner').style.display = isAdmin ? 'block' : 'none';
+        document.getElementById('admin-toggle').textContent = isAdmin ? 'Exit Admin Mode' : 'Admin Mode';
+    }
+    updateAdminMode();
+
+    document.getElementById('admin-toggle').addEventListener('click', function() {
+        isAdmin = !isAdmin;
+        updateAdminMode();
     });
 }); 
