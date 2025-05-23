@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,19 +7,75 @@ body {
     line-height: 1.6;
 }
 header {
-    background-color: #f4f4f4;
-    padding: 1rem;
+    background:
+        linear-gradient(90deg, rgba(255,236,210,0.7) 0%, rgba(252,182,159,0.7) 100%),
+        url('photos/Background.png') center center/cover no-repeat;
+    padding: 2.5rem 1rem 1.5rem 1rem;
     text-align: center;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    margin-top: -4px;
+    position: relative;
+    z-index: 1;
+}
+header h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2.7rem;
+    color: #d72660;
+    margin-bottom: 0.3rem;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(215,38,96,0.08);
+}
+header p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 0;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 nav {
-    background-color: #333;
+    background: linear-gradient(90deg, #1976d2 0%, #23a6d5 100%);
     color: white;
-    padding: 1rem;
+    padding: 0.7rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 18px 18px;
+    margin: 0 auto 1.2rem auto;
+    max-width: 900px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 1.2rem;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ffd166;
+}
+#admin-toggle {
+    background: #ffd166;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+#admin-toggle:hover {
+    background: #ffb347;
+    color: #fff;
 }
 .container {
     max-width: 1200px;
@@ -116,4 +174,18 @@ nav a {
 }
 .content.active {
     display: block;
+}
+.top-background {
+    display: none;
+}
+@media (max-width: 600px) {
+    .top-background {
+        height: 120px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
 } 
