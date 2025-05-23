@@ -4,79 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chiya Sangeet - Restaurant</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .menu-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-        .menu-item {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-        }
-        .menu-photo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-        .menu-info {
-            text-align: center;
-        }
-        .menu-name {
-            margin: 0.5rem 0 0.2rem 0;
-        }
-        .menu-price {
-            color: #388e3c;
-            font-weight: bold;
-            margin: 0 0 0.5rem 0;
-        }
-        .admin-controls button {
-            margin: 0 0.2rem;
-            background: #1976d2;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 0.3rem 0.7rem;
-            cursor: pointer;
-        }
-        .admin-controls button:hover {
-            background: #1565c0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -91,23 +19,208 @@
     <div class="container">
         <section id="menu">
             <h2>Our Menu</h2>
-            <div id="menu-gallery" class="menu-gallery">
-                <!-- Example menu item, repeat for up to 50 items -->
-                <!-- In real use, this will be generated dynamically with JS -->
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/150" alt="Item Photo" class="menu-photo">
-                    <div class="menu-info">
-                        <h3 class="menu-name">Item Name</h3>
-                        <p class="menu-price">Rs. 100</p>
-                        <!-- Admin controls (visible only in admin mode) -->
-                        <div class="admin-controls" style="display:none;">
-                            <button>Edit</button>
-                            <button>Change Photo</button>
-                            <button>Delete</button>
+            <div class="menu-categories">
+                <!-- Tea Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Tea Section</button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chiya</h3>
+                                    <p class="menu-price">Rs. 30</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Masala Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Masala Chiya</h3>
+                                    <p class="menu-price">Rs. 40</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Matka Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Matka Chiya</h3>
+                                    <p class="menu-price">Rs. 45 / 65</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Black Tea" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Black Tea</h3>
+                                    <p class="menu-price">Rs. 20</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Lemon Tea" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Lemon Tea</h3>
+                                    <p class="menu-price">Rs. 25</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Sangeet Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Sangeet Chiya</h3>
+                                    <p class="menu-price">Rs. 70</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Repeat above block for each menu item -->
+                <!-- Snacks Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Snacks Section</button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Chauchau Sadeko" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chauchau Sadeko</h3>
+                                    <p class="menu-price">Rs. 70</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Makai Sadeko" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Makai Sadeko</h3>
+                                    <p class="menu-price">Rs. 80</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Chukauni" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chukauni</h3>
+                                    <p class="menu-price">Rs. 50</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Batuk Bara" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Batuk Bara</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Pakauda" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Pakauda</h3>
+                                    <p class="menu-price">Rs. 70</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Roti/Paratha Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Roti / Paratha</button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Aalu Paratha" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Aalu Paratha</h3>
+                                    <p class="menu-price">Rs. 90</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Chicken Paratha" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chicken Paratha</h3>
+                                    <p class="menu-price">Rs. 120</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Phapar Roti" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Phapar Roti</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Kodo Roti" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Kodo Roti</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Salad Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Salad Items</button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Nepali Salad" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Nepali Salad</h3>
+                                    <p class="menu-price">Rs. 150</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Fruit Salad" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Fruit Salad</h3>
+                                    <p class="menu-price">Rs. 200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Drinks / Lassi Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Drinks / Lassi</button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Coke/Pepsi/Sprite/Slice/Dew" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Coke/Pepsi/Sprite/Slice/Dew</h3>
+                                    <p class="menu-price">Rs. 60</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Red bull (Xtreme)" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Red bull (Xtreme)</h3>
+                                    <p class="menu-price">Rs. 140</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Banana Lassi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Banana Lassi</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Plain Lassi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Plain Lassi</h3>
+                                    <p class="menu-price">Rs. 80</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Masala Lassi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Masala Lassi</h3>
+                                    <p class="menu-price">Rs. 120</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="https://via.placeholder.com/150" alt="Mohi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Mohi</h3>
+                                    <p class="menu-price">Rs. 40</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="location">
@@ -118,13 +231,6 @@
             </div>
         </section>
     </div>
-    <script>
-    // Placeholder for switching between viewer and admin mode
-    // In real implementation, use authentication and JS to toggle admin controls
-    const isAdmin = false; // Change to true to simulate admin mode
-    document.querySelectorAll('.admin-controls').forEach(ctrl => {
-        ctrl.style.display = isAdmin ? 'block' : 'none';
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html> 

@@ -10,3 +10,10 @@ A design that supports both viewer and admin modes (admin can edit items, viewer
 In admin mode, allow editing of name, price, and photo for each menu item.
 Google Maps integration for the location section.
 All styles should be preserved and look modern.
+
+
+
+
+
+
+

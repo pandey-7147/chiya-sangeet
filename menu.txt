@@ -1,0 +1,35 @@
+Menu sections : 
+
+1. Tea Section 
+- Chiya : 30
+- Masala Chiya :40
+- Matka Chiya : 45 / 65
+= Black Tea : 20
+= Lemon Tea : 25
+= Sangeet Chiya : 70
+
+
+2. Snacks Section 
+-Chauchau Sadeko : 70
+- Makai Sadeko: 80
+= Chukauni : 50
+- Batuk Bara : 100
+-Pakauda : 70
+
+3. Roti/ Paratha 
+- Aalu Paratha : 90
+-Chicken Paratha : 120
+- Phapar Roti : 100
+-Kodo Roti : 100
+
+4. Salad items : 
+Nepali Salad : 150
+Fruit Salad : 200
+
+5. Drinks / Lassi
+- Coke/ Pepsi / Sprite / Slice / Dew : 60
+- Red bull (Xtreme) : 140
+- Banana Lassi : 100
+- Plain Lassi : 80
+- Masala Lassi : 120
+- Mohi : 40
