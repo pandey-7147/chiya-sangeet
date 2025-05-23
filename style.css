@@ -51,6 +51,9 @@ nav a {
 }
 .menu-name {
     margin: 0.5rem 0 0.2rem 0;
+    text-align: center;
+    word-break: break-word;
+    white-space: normal;
 }
 .menu-price {
     color: #388e3c;
