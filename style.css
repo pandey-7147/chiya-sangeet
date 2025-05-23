@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
 body {
     font-family: Arial, sans-serif;
@@ -188,4 +188,11 @@ nav a:hover {
     header p {
         font-size: 1rem;
     }
+}
+.devanagari {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 3rem;
+    color: #d72660;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(215,38,96,0.08);
 } 
