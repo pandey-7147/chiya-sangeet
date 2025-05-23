@@ -4,54 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chiya Sangeet - Restaurant</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="top-background"></div>
     <header>
         <h1>Chiya Sangeet</h1>
-        <p>Welcome to our restaurant</p>
+        <p>"Chiya Sangeet, Lat Chiya ra Sangeet ko"</p>
     </header>
     <nav>
         <a href="#menu">Menu</a>
         <a href="#location">Location</a>
-        <a href="#admin">Admin</a>
     </nav>
     <div class="container">
         <section id="menu">
             <h2>Our Menu</h2>
-            <!-- Menu items will be added here -->
+            <div class="menu-categories">
+                <!-- Tea Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Tea Section <span class="arrow">▼</span></button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="photos/Chiya.png" alt="Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chiya</h3>
+                                    <p class="menu-price">Rs. 30</p>
+                                </div>
+                            </div>
+                           
+                            <div class="menu-item">
+                                <img src="photos/Masala Chiya.png" alt="Masala Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Masala Chiya</h3>
+                                    <p class="menu-price">Rs. 40</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Matka Chiya.png" alt="Matka Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Matka Chiya</h3>
+                                    <p class="menu-price">Rs. 45 / 65</p>
+                                </div>
+                            </div>
+                        
+                            <div class="menu-item">
+                                <img src="photos/Black Tea.png" alt="Black Tea" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Black Tea</h3>
+                                    <p class="menu-price">Rs. 20</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Lemon Tea.png" alt="Lemon Tea" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Lemon Tea</h3>
+                                    <p class="menu-price">Rs. 25</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Sangeet Chiya.png" alt="Sangeet Chiya" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Sangeet Chiya</h3>
+                                    <p class="menu-price">Rs. 70</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Snacks Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Snacks Section <span class="arrow">▼</span></button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="photos/Chauchau Sadeko.png" alt="Chauchau Sadeko" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chauchau Sadeko</h3>
+                                    <p class="menu-price">Rs. 70</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Makai Sadeko.png" alt="Makai Sadeko" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Makai Sadeko</h3>
+                                    <p class="menu-price">Rs. 80</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Chukauni.png" alt="Chukauni" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chukauni</h3>
+                                    <p class="menu-price">Rs. 50</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Batuk Bara.png" alt="Batuk Bara" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Batuk Bara</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Pakauda.png" alt="Pakauda" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Pakauda</h3>
+                                    <p class="menu-price">Rs. 70</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Roti/Paratha Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Roti / Paratha <span class="arrow">▼</span></button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="photos/Aalu Paratha.png" alt="Aalu Paratha" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Aalu Paratha</h3>
+                                    <p class="menu-price">Rs. 90</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Chicken Paratha.png" alt="Chicken Paratha" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Chicken Paratha</h3>
+                                    <p class="menu-price">Rs. 120</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Phapar Roti.png" alt="Phapar Roti" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Phapar Roti</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Kodo Roti.png" alt="Kodo Roti" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Kodo Roti</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Salad Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Salad Items <span class="arrow">▼</span></button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="photos/Nepali Salad.png" alt="Nepali Salad" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Nepali Salad</h3>
+                                    <p class="menu-price">Rs. 150</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Fruit Salad.png" alt="Fruit Salad" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Fruit Salad</h3>
+                                    <p class="menu-price">Rs. 200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Drinks / Lassi Section -->
+                <div class="menu-category">
+                    <button class="collapsible">Drinks / Lassi <span class="arrow">▼</span></button>
+                    <div class="content">
+                        <div class="menu-gallery">
+                            <div class="menu-item">
+                                <img src="photos/Coke.png" alt="Coke/Pepsi/Sprite/Slice/Dew" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Coke/Pepsi/Sprite/Slice/Dew</h3>
+                                    <p class="menu-price">Rs. 60</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Redbull.png" alt="Red bull (Xtreme)" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Red bull (Xtreme)</h3>
+                                    <p class="menu-price">Rs. 140</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Banana Lassi.png" alt="Banana Lassi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Banana Lassi</h3>
+                                    <p class="menu-price">Rs. 100</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Plain Lassi.png" alt="Plain Lassi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Plain Lassi</h3>
+                                    <p class="menu-price">Rs. 80</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Masala Lassi.png" alt="Masala Lassi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Masala Lassi</h3>
+                                    <p class="menu-price">Rs. 120</p>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <img src="photos/Mohi.png" alt="Mohi" class="menu-photo">
+                                <div class="menu-info">
+                                    <h3 class="menu-name">Mohi</h3>
+                                    <p class="menu-price">Rs. 40</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="location">
             <h2>Find Us</h2>
-            <!-- Google Maps will be integrated here -->
+            <!-- Google Maps Embed Placeholder -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.3513790908655!2d85.3314317752528!3d27.681147176197594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190020f368a1%3A0xf31f3d3564c405ea!2sChiya%20Sangeet!5e1!3m2!1sen!2snp!4v1747986160969!5m2!1sen!2snp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </div>
+    <footer style="background:#222;color:#fff;text-align:center;padding:1rem 0;margin-top:2rem;font-size:0.95rem;">
+        &copy; 2024 Chiya Sangeet. Created by Ankit Pandey. Contact: +9779867232274
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html> 
