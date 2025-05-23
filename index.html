@@ -31,6 +31,51 @@
             margin: 0 auto;
             padding: 2rem;
         }
+        .menu-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .menu-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        .menu-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .menu-info {
+            text-align: center;
+        }
+        .menu-name {
+            margin: 0.5rem 0 0.2rem 0;
+        }
+        .menu-price {
+            color: #388e3c;
+            font-weight: bold;
+            margin: 0 0 0.5rem 0;
+        }
+        .admin-controls button {
+            margin: 0 0.2rem;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 0.3rem 0.7rem;
+            cursor: pointer;
+        }
+        .admin-controls button:hover {
+            background: #1565c0;
+        }
     </style>
 </head>
 <body>
@@ -46,12 +91,40 @@
     <div class="container">
         <section id="menu">
             <h2>Our Menu</h2>
-            <!-- Menu items will be added here -->
+            <div id="menu-gallery" class="menu-gallery">
+                <!-- Example menu item, repeat for up to 50 items -->
+                <!-- In real use, this will be generated dynamically with JS -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150" alt="Item Photo" class="menu-photo">
+                    <div class="menu-info">
+                        <h3 class="menu-name">Item Name</h3>
+                        <p class="menu-price">Rs. 100</p>
+                        <!-- Admin controls (visible only in admin mode) -->
+                        <div class="admin-controls" style="display:none;">
+                            <button>Edit</button>
+                            <button>Change Photo</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat above block for each menu item -->
+            </div>
         </section>
         <section id="location">
             <h2>Find Us</h2>
-            <!-- Google Maps will be integrated here -->
+            <!-- Google Maps Embed Placeholder -->
+            <div style="width:100%;height:400px;background:#eee;display:flex;align-items:center;justify-content:center;">
+                <span>Google Maps will be integrated here</span>
+            </div>
         </section>
     </div>
+    <script>
+    // Placeholder for switching between viewer and admin mode
+    // In real implementation, use authentication and JS to toggle admin controls
+    const isAdmin = false; // Change to true to simulate admin mode
+    document.querySelectorAll('.admin-controls').forEach(ctrl => {
+        ctrl.style.display = isAdmin ? 'block' : 'none';
+    });
+    </script>
 </body>
 </html> 

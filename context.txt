@@ -3,3 +3,10 @@
 3. The website will contain the viewer's mode and admin mode 
 4. When we go to theh admin mode by logging in to the website, we should be able to edit the price, photo, name or anything . The styles should be preserved tho
 
+
+Features to add:
+A menu section that can display up to 50 items, each with a photo, name, and price.
+A design that supports both viewer and admin modes (admin can edit items, viewer cannot).
+In admin mode, allow editing of name, price, and photo for each menu item.
+Google Maps integration for the location section.
+All styles should be preserved and look modern.
