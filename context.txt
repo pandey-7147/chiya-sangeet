@@ -1,0 +1,5 @@
+1. This project is set up to build a website for my restaurant called Chiya Sangeet.
+2. For now, the website will only contain the menu of the items and the location of the place based on the google map. 
+3. The website will contain the viewer's mode and admin mode 
+4. When we go to theh admin mode by logging in to the website, we should be able to edit the price, photo, name or anything . The styles should be preserved tho
+
