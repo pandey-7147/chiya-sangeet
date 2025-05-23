@@ -1,15 +1,35 @@
-1. This project is set up to build a website for my restaurant called Chiya Sangeet.
-2. For now, the website will only contain the menu of the items and the location of the place based on the google map. 
-3. The website will contain the viewer's mode and admin mode 
-4. When we go to theh admin mode by logging in to the website, we should be able to edit the price, photo, name or anything . The styles should be preserved tho
+# Chiya Sangeet Restaurant Website
 
+A modern website for Chiya Sangeet restaurant featuring an interactive menu and location information.
 
-Features to add:
-A menu section that can display up to 50 items, each with a photo, name, and price.
-A design that supports both viewer and admin modes (admin can edit items, viewer cannot).
-In admin mode, allow editing of name, price, and photo for each menu item.
-Google Maps integration for the location section.
-All styles should be preserved and look modern.
+## Overview
+
+This website provides customers with an easy way to browse our menu items and find our location. It also includes an admin interface for staff to manage menu content.
+
+## Features
+
+- Interactive menu display system
+  - Supports up to 50 menu items
+  - Each item includes photo, name and price
+  - Modern, consistent styling throughout
+
+- Dual mode interface
+  - Public viewer mode for customers
+  - Secure admin mode for staff
+  
+- Admin capabilities
+  - Edit menu item names
+  - Update prices
+  - Change item photos
+  - All changes preserve existing styling
+
+- Location
+  - Google Maps integration
+  - Easy to find our restaurant
+
+## Technology
+
+Built with modern web technologies and an emphasis on clean, professional design that maintains visual consistency across all pages and components.
 
 
 
