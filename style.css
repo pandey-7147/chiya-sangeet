@@ -89,6 +89,14 @@ nav a {
 .collapsible:hover, .collapsible.active {
     background-color: #1565c0;
 }
+.collapsible .arrow {
+    float: right;
+    transition: transform 0.3s;
+    font-size: 1.1em;
+}
+.collapsible.active .arrow {
+    transform: rotate(180deg);
+}
 .menu-category {
     margin-bottom: 2rem;
     border-radius: 8px;
