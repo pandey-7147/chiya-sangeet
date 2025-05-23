@@ -10,11 +10,8 @@ body {
 
 }
 header {
-    background:
-    linear-gradient(292deg, rgba(255, 236, 210, 0.7) 0%, rgba(207, 103, 68, 0.7) 100%), url(photos/Background.png) center center / cover no-repeat;
-    
-    
-        padding: 2.5rem 1rem 1.5rem 1rem;
+    background: linear-gradient(292deg, rgba(255, 236, 210, 0.7) 0%, rgb(5 5 5 / 70%) 100%), url(photos/Background.png) center center / cover no-repeat;
+    padding: 2.5rem 1rem 1.5rem 1rem;
     text-align: center;
     border-radius: 0 0 24px 24px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.07);
@@ -99,7 +96,7 @@ nav a:hover {
     gap: 2rem;
 }
 .menu-item {
-    background: linear-gradient(130deg, #d65992, transparent);
+    background: linear-gradient(130deg, #5d5e5d, transparent);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     overflow: hidden;
@@ -195,7 +192,7 @@ nav a:hover {
     max-height: 2000px;
     opacity: 1;
     transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.5s cubic-bezier(0.4,0,0.2,1);
-    background: linear-gradient(343deg, #32a15b, transparent);
+    background: linear-gradient(343deg, #92a197, transparent);
 }
 .top-background {
     display: none;
@@ -212,9 +209,9 @@ nav a:hover {
     }
 }
 .devanagari {
-    font-family: 'Tiro Devanagari Hindi', serif;
+    font-family: 'fangsong', serif;
     font-size: 3rem;
-    color: #d72660;
+    color: #20191c;
     letter-spacing: 2px;
     text-shadow: 0 2px 8px rgba(215,38,96,0.08);
 } 
